@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <script src="https://kit.fontawesome.com/7e1c3c6948.js" crossorigin="anonymous"></script>
+  
+  <title>Personal Portfolio Website</title>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="media/green1.png" alt="name" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="./project.html">Projects</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Welcome</p>
+        <h1>Hi, I'm <span>Yedian</span> <br>Journey to Web Dev </h1>
+      </div>
+    </div>
+  </div>
+  <!-- ------------about------------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="media/nubelson-fernandes--Xqckh_XVU4-unsplash.jpg" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p class="para">Hello my name is Yedian im 24 and im currently a student at correlation one studying Web Development. I like playing video games, my favorite games are Witcher 3, Elden Ring, Dark Souls, Monster Hunter World. Im a big fan of the Marvel and Dc Movies, Comics, Shows. Best anime ever "Attack On Titan", "Death Note", "Demon Slayer". I also like to draw, pencil or digital pixel style. I used to be a wrestler aswell, started wrestling when i was 7. <br><br><br> One of the things i enjoy doing is creating 2D pixel side scroller games (unfinished) for fun because i wanted to be Game Developer, But after i found out how bad that industry is i changed my mind and started to pursue web/software developer which i heard so many good things about. i Recently did started learning python self taught because i've always enjoyed creating things and because im looking to better my life and help my family. Im excited to see where this takes me.</p>
+          <div class="tab-title">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web interfaces</li>
+              <li><span>Web Development</span><br>Web Development</li>
+              <li><span>Photoshop designer</span><br>Logos/Banners</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>HTML</span><br>Webs</li>
+              <li><span>CSS</span><br>Style</li>
+              <li><span>Javascript</span><br>N/A</li>
+              <li><span>Python</span><br>Basics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!----------------------------------------------------------------->
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="media/1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="media/2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="media/3.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<!-------------------------------contact------------------------->
+ 
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i> Email@Gmail.com</p>
+        <p><i class="fas fa-phone-square-alt"></i> 123456789</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/yedian-cuinas-990a2027b/"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" class="name" placeholder="Name" required>
+          <input type="email" class="email" placeholder="Email">
+          <textarea name="Message" rows="6" placeholder="Message"></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--------------------------------imageslider--------------------->
+  
+
+
+
+<!----------------------------------------------------------------------->
+  <script type = "text/javascript" src= "./bootstrap.js"></script>
+  <script type = "text/javascript" src= "./script.js"></script>
+
+  
+</body>
+
+</html>
